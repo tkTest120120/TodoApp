@@ -38,7 +38,7 @@ const AddScreen = ({ navigation, route }) => {
     };
 
     const addTodo = (): void => {
-        if(name == ""){
+        if (name == "") {
             alert("Input name");
         } else {
             axios.post("https://61c0221033f24c001782313a.mockapi.io/api/Todo", {
@@ -51,13 +51,13 @@ const AddScreen = ({ navigation, route }) => {
                 })
                 .catch(function (error) {
                     console.log(error);
-                });                
+                    
+                });
         }
     }
 
     return (
         <View style={styles.container}>
-
             <Text style={{
                 fontSize: 40,
                 fontWeight: "bold",
@@ -106,9 +106,9 @@ const styles = StyleSheet.create({
         borderColor: "black",
         borderWidth: 1,
         width: 300,
-        minHeight : 40,
+        minHeight: 40,
         paddingLeft: 20,
-        fontSize : 20
+        fontSize: 20
     },
 
     cb_layout: {
