@@ -50,7 +50,7 @@ const AddScreen = ({ navigation, route }) => {
                     navigation.replace("Home");
                 })
                 .catch(function (error) {
-                    console.log(error);
+                    // console.log(error);
                 });                
         }
     }
