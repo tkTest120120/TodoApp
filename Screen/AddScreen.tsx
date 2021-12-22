@@ -19,7 +19,7 @@ import Checkbox from 'expo-checkbox';
 
 const WIDTH: number = Dimensions.get("screen").width;
 
-const AddScreen = ({ navigation, route }) => {
+    const AddScreen = ({ navigation, route }) => {
     const [isSelected, setSelection] = React.useState(false);
     const [name, setName] = React.useState("");
 
